@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interview Trainer Agent</title>
+</head>
+<body>
+    <h1>Upload Your Resume</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="resume" required>
+        <input type="submit" value="Upload">
+    </form>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    {% if info %}
+        <h3>Resume Info:</h3>
+        <ul>
+            <li><strong>Name:</strong> {{ info.name }}</li>
+            <li><strong>Email:</strong> {{ info.email }}</li>
+            <li><strong>Skills:</strong> {{ info.skills | join(', ') }}</li>
+            <li><strong>Role:</strong> {{ info.role }}</li>
+            <li><strong>Level:</strong> {{ info.level }}</li>
+        </ul>
+    {% endif %}
+
+    {% if result %}
+        <h3>Generated Interview Prep:</h3>
+        <pre>{{ result }}</pre>
+    {% endif %}
+</body>
+</html>
