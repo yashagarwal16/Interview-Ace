@@ -60,7 +60,4 @@ Job seekers often struggle to find role-specific questions and answers that matc
 Built by Yash Agarwal
 
 
----
-
-Let me know if you'd like a badge (e.g., IBM watsonx, Flask) or a GitHub Actions CI badge added!
 
