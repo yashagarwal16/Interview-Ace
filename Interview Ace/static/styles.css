@@ -1,0 +1,68 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border: none;
+    padding: 30px;
+}
+
+.btn-primary, .btn-success {
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.upload-zone {
+    border: 3px dashed #007bff;
+    border-radius: 12px;
+    padding: 50px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #e9f2ff;
+    transition: background 0.3s;
+}
+
+.upload-zone:hover {
+    background-color: #d0e7ff;
+}
+
+.alert-success {
+    background: #d1e7dd;
+    color: #0f5132;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.question-item {
+    background: #ffffff;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: transform 0.2s;
+}
+
+.question-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+}
+
+.skills-container .badge {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    margin: 5px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
